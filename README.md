@@ -1,4 +1,4 @@
-# 🤖 Bot de Finanzas Personal - Telegram
+# Bot de Finanzas Personal - Telegram
 
 Bot avanzado para control de finanzas personales usando Telegram y Google Sheets.
 
@@ -37,12 +37,3 @@ Bot avanzado para control de finanzas personales usando Telegram y Google Sheets
 - `/presupuesto [categoría] [monto]` - Configurar presupuesto
 - `/reporte` - Ver estadísticas
 - `/ayuda` - Ayuda completa
-
-## 🛡️ Seguridad
-⚠️ **IMPORTANTE:** Nunca subas tu token real ni tu Sheet ID a GitHub.
-
-## 📄 Licencia
-MIT License
-
-## 🙏 Créditos
-Desarrollado con ❤️ y ayuda de GitHub Copilot
