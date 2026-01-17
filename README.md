@@ -1,12 +1,48 @@
-# control_de_finanzas
-sistema donde se emplea un bot de telegram con las hojas de calculo de google}
+# 🤖 Bot de Finanzas Personal - Telegram
 
-esto se usa por medio de una plantilla que dejare aquí para ayudar con las finanzas y algunos calculos, puede ser modificado
+Bot avanzado para control de finanzas personales usando Telegram y Google Sheets.
 
-## Pasos ##
-Crear el bot por medio de telegram 'BotFather'.
-Despues de seguir los pasos de BotFather, habras creado tu bot, donde te dara un ID
+## 🌟 Características
+- 📊 Reportes por período (día/semana/mes)
+- 🗂️ 12 categorías predefinidas
+- 💳 Múltiples cuentas (Efectivo/Débito/Crédito)
+- 🔄 Transferencias entre cuentas
+- 💰 Presupuestos con alertas
+- 🔍 Búsqueda de transacciones
+- 📈 Gráficos visuales
 
-Despues de eso, deberás de crear una hoja de Sheets de google, donde en la URL deberás de obtener el id, es decir lo que esta entre d/ y /edit
+## 🚀 Instalación
 
-para despues pasar ahora si a agregar el script, para esto deberás de entrar en la opción de extensiones y app script
+1. Crea un bot en Telegram con [@BotFather](https://t.me/botfather)
+2. Copia el token
+3. Crea una Google Sheet con las hojas: 
+   - **Config:** `ChatID | Estado | TempData | ListaActiva | Presupuestos`
+   - **Registro:** `Fecha | Usuario | Tipo | Categoria | Cuenta | Monto | Concepto`
+4. Abre Google Apps Script
+5. Pega el código de `Code.gs`
+6. Configura tus variables:
+   ```javascript
+   var token = "TU_TOKEN_AQUI";
+   var sheetId = "TU_SHEET_ID";
+   ```
+7. Despliega como Web App
+8. Copia la URL y actualiza `webAppUrl`
+9. Ejecuta `configurarWebhook()`
+
+## 📝 Comandos
+- `/start` - Iniciar bot
+- `/nueva [nombre]` - Crear lista
+- `/usar [nombre]` - Cambiar lista
+- `/buscar [texto]` - Buscar transacciones
+- `/presupuesto [categoría] [monto]` - Configurar presupuesto
+- `/reporte` - Ver estadísticas
+- `/ayuda` - Ayuda completa
+
+## 🛡️ Seguridad
+⚠️ **IMPORTANTE:** Nunca subas tu token real ni tu Sheet ID a GitHub.
+
+## 📄 Licencia
+MIT License
+
+## 🙏 Créditos
+Desarrollado con ❤️ y ayuda de GitHub Copilot
